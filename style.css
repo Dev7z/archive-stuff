@@ -1,0 +1,152 @@
+html {
+	overflow-y: scroll;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(Montserrat-Light.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #00aaff;
+}
+
+::selection {
+  color: #fff;
+  background: #00aaff;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #0093ff;
+}
+
+#header a, #nav a {
+	text-decoration: none;
+}
+
+#header {
+    background-color: #111;
+	clear: both;
+	color: #555;
+	font-size: 1.78em;
+	padding: 0.7ex 0.7ex 0.7ex 0.7em;
+}
+
+a:hover {
+    text-shadow: 0 0 15px #0093ff;
+}
+
+#nav a:hover {
+    background-color: #222;
+    text-shadow: 0 0 0px;
+}
+
+#title:hover {
+    text-shadow: 0 0 0px;
+}
+
+#headerLink {
+	color: #0093ff;
+	margin-left: 5px;
+}
+
+#nav {
+	padding: 1em 0;
+	float: left;
+	border-right: 1px solid #0093ff;
+	width: 250px;
+}
+
+#nav a{
+	color: #777;
+}
+
+#nav ul {
+	position: relative;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	list-style: none;
+	padding: 0;
+	margin-right: 1em;
+	border-top: 1px solid #777;
+	border-right: 1px solid #0093ff;
+}
+
+#nav li ul {
+	padding-left: 0.6em !important;
+}
+
+#nav li a {
+	display: block;
+	margin: 0;
+	padding: 0.8ex 2em 0.8ex 1em;
+}
+
+#spoiler{
+	filter: brightness(0%);
+}
+
+#spoiler:hover{
+	filter: none;
+}
+
+#main {
+	margin: 25px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column video {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+} 
