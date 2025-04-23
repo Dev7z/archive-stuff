@@ -48,6 +48,15 @@ a:hover {
     text-shadow: 0 0 15px #0093ff;
 }
 
+code {
+	margin: 1px 4px;
+	color: #44d1ff;
+  	background-color: #002d3c;
+  	border-radius: 2px;
+  	border: 1px solid #003871;
+ 	font-size: 0.85rem;
+}
+
 #nav a:hover {
     background-color: #222;
     text-shadow: 0 0 0px;
